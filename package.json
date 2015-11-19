@@ -4,7 +4,7 @@
   "description": "OSM Vector Tiles",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "./node_modules/.bin/electron main.js"
   },
   "devDependencies": {
     "electron-prebuilt": "^0.34.3",
