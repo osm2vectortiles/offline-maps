@@ -45,3 +45,7 @@ Place your mbtiles file to the resources folder and rename it to tiles.mbtiles
 cd offline-maps
 npm start
 ```
+
+### Screenshot
+
+[screenshot](./screenshot.png)
