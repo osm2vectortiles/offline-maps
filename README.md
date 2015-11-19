@@ -35,7 +35,7 @@ cd ./resources/tiles.tm2
 open project.yml and replace source: "mapbox:///mapbox.mapbox-streets-v6" with source: "mbtiles://./resources/tiles.mbtiles"
 ```
 
-### Add mbtiles to ./resources folder
+### Add mbtiles file to ./resources folder
 
 Place your mbtiles file to the resources folder and rename it to tiles.mbtiles
 
