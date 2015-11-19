@@ -1,0 +1,21 @@
+{
+  "name": "osm-vector-tiles",
+  "version": "1.0.0",
+  "description": "OSM Vector Tiles",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.34.3",
+    "electron-rebuild": "^1.0.2"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "mbtiles": "^0.8.2",
+    "tessera": "^0.5.3",
+    "tilelive": "^5.11.0",
+    "tilelive-tmstyle": "^0.4.2",
+    "tilelive-vector": "^3.5.1"
+  }
+}

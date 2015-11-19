@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>OSM Vector Tiles</title>
+  	<link rel="stylesheet" type="text/css" href="resources/style.css">
+  </head>
+  <body>
+  	<img src="resources/logo.png">
+  </body>
+
+  <script type="text/javascript">
+    window.$ = window.jQuery = require('jquery');
+    var mainAddr = 'http://localhost:3000';
+	
+	// retry until tessera has started and responses
+	$.ajax({
+    type: 'HEAD',
+    url: mainAddr,
+    tryCount: 0,
+    retryLimit: 200,
+    success: function() {
+        location.replace(mainAddr);
+    },
+    error: function() {
+    	this.tryCount++;
+    	if (this.tryCount <= this.retryLimit) {
+	        //try again
+	        $.ajax(this);
+	        return;
+        }            
+        return;
+    }
+	});
+  </script>
+</html>
