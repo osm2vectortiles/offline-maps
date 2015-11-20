@@ -27,12 +27,17 @@ wget -P ./resources/fonts https://github.com/aaronlidman/Toner-for-Tilemill/raw/
 wget -P ./resources/fonts https://github.com/aaronlidman/Toner-for-Tilemill/raw/master/toner4tilemill/fonts/Arial-Unicode-Italic.ttf && \
 wget -P ./resources/fonts https://github.com/aaronlidman/Toner-for-Tilemill/raw/master/toner4tilemill/fonts/Arial-Unicode-Regular.ttf
 ```
-### Download the visual style and change vector tile source
+### Download the visual style
 
 ```bash
 git clone https://github.com/mapbox/mapbox-studio-osm-bright.tm2.git ./resources/tiles.tm2
 cd ./resources/tiles.tm2
-open project.yml and replace source: "mapbox:///mapbox.mapbox-streets-v6" with source: "mbtiles://./resources/tiles.mbtiles"
+open project.yml
+```
+### Change the vector tile source to mbtiles
+```diff
+- source: "mapbox:///mapbox.mapbox-streets-v6"
++ source: "mbtiles://./resources/tiles.mbtiles"
 ```
 
 ### Add mbtiles file to ./resources folder
