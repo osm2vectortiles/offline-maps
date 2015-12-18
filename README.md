@@ -34,6 +34,12 @@ git clone https://github.com/mapbox/mapbox-studio-osm-bright.tm2.git ./resources
 cd ./resources/tiles.tm2
 open project.yml
 ```
+### Download an mbtiles extract from [OSM2VectorTiles website](http://osm2vectortiles.org/downloads/)
+
+```bash
+wget https://osm2vectortiles-downloads.os.zhdk.cloud.switch.ch/v1.0/extracts/zurich.mbtiles
+```
+
 ### Change the vector tile source to mbtiles
 ```diff
 - source: "mapbox:///mapbox.mapbox-streets-v6"
